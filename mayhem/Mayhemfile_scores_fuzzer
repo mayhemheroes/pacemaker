@@ -1,0 +1,8 @@
+project: pacemaker
+target: scores_fuzzer
+testsuite:
+  - file:///mayhem/mayhem/testsuite/scores_fuzzer
+cmds:
+  - cmd: /mayhem/scores_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/scores_fuzzer.dict

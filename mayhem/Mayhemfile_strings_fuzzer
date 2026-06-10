@@ -1,0 +1,8 @@
+project: pacemaker
+target: strings_fuzzer
+testsuite:
+  - file:///mayhem/mayhem/testsuite/strings_fuzzer
+cmds:
+  - cmd: /mayhem/strings_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/strings_fuzzer.dict
