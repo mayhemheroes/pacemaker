@@ -1,0 +1,7 @@
+project: pacemaker
+target: cib_file_fuzzer
+testsuite:
+  - file:///mayhem/mayhem/testsuite/cib_file_fuzzer
+cmds:
+  - cmd: /mayhem/cib_file_fuzzer
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: pacemaker
+target: iso8601_fuzzer
+testsuite:
+  - file:///mayhem/mayhem/testsuite/iso8601_fuzzer
+cmds:
+  - cmd: /mayhem/iso8601_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/iso8601_fuzzer.dict
