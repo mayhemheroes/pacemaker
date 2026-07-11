@@ -1,0 +1,8 @@
+project: pacemaker
+target: cib_file_fuzzer
+cmds:
+  - cmd: /mayhem/cib_file_fuzzer
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/cib_file_fuzzer/testsuite

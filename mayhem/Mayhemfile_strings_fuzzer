@@ -1,0 +1,9 @@
+project: pacemaker
+target: strings_fuzzer
+cmds:
+  - cmd: /mayhem/strings_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/strings_fuzzer.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/strings_fuzzer/testsuite

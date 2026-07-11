@@ -1,0 +1,9 @@
+project: pacemaker
+target: scores_fuzzer
+cmds:
+  - cmd: /mayhem/scores_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/scores_fuzzer.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/scores_fuzzer/testsuite
